@@ -1,0 +1,21 @@
+.container-landing {
+  display: flex;
+  height: 82vh;
+  justify-content: center;
+}
+
+.landing-about-text {
+  font-family: Roboto, sans-serif;
+  font-weight: bolder;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .landing-bacground-img {
+  background: url(../../../assets/images/background/stethoscope.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+} */

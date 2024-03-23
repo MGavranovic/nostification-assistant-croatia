@@ -7,6 +7,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SearchComponent } from './nav-bar/search/search.component';
 import { LogoComponent } from './nav-bar/logo/logo.component';
 import { MenuComponent } from './nav-bar/menu/menu.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FooterComponent } from './landing-page/footer/footer.component';
+import { LandingComponent } from './landing-page/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { MenuComponent } from './nav-bar/menu/menu.component';
     NavBarComponent,
     SearchComponent,
     LogoComponent,
-    MenuComponent
+    MenuComponent,
+    LandingPageComponent,
+    FooterComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
