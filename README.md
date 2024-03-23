@@ -1,10 +1,10 @@
-# NostrificationAssistantCroatia
+# Nostrification Assistant Croatia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
 ## About
 
-This project aims to help foreign students, especially from Bosnia & Herzegovina, with the process of Nostrification in Croatia.
+This project aims to help foreign Med Students, especially from Bosnia & Herzegovina, with the process of Nostrification in Croatia.
 
 Here you will find material required for the exams as well as some tips gathered over time from multiple students.
 
