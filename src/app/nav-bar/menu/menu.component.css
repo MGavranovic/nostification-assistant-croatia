@@ -1,0 +1,6 @@
+.container-nav-bar-menu {
+  display: flex;
+  border: solid red;
+  width: 20rem;
+  justify-content: space-around;
+}
