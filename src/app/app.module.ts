@@ -10,6 +10,7 @@ import { MenuComponent } from './nav-bar/menu/menu.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './landing-page/footer/footer.component';
 import { LandingComponent } from './landing-page/landing/landing.component';
+import { MainClassesComponent } from './main-classes/main-classes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LandingComponent } from './landing-page/landing/landing.component';
     MenuComponent,
     LandingPageComponent,
     FooterComponent,
-    LandingComponent
+    LandingComponent,
+    MainClassesComponent
   ],
   imports: [
     BrowserModule,
