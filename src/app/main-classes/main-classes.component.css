@@ -1,0 +1,40 @@
+.container-main-classes {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-classes-items {
+  width: 290px;
+  background-color: #fdfefe;
+  margin: 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #efefef 2px solid;
+}
+
+.main-classes-image {
+  width: 265px;
+  height: 250px;
+}
+.main-classes-class-name {
+  font-size: 14px;
+  color: black;
+  margin-top: 7px;
+}
+
+.main-classes-class-professor {
+  font-size: 12px;
+  color: black;
+  margin-top: 7px;
+}
+.main-classes-items:hover {
+  -webkit-box-shadow: 0 0 1px #000 inset;
+  -moz-box-shadow: 0 0 1px 3px #000 inset;
+  border: #efefef 0 0 1px 3px #000 inset;
+  box-shadow: 10px 10px 18px #cccccc;
+  transform: scale(1.2);
+}

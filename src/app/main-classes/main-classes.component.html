@@ -1,8 +1,13 @@
 <div class="container-main-classes">
-  <div class="main-classes-items">
+  <div class="main-classes-items" *ngFor="let item of classesArray">
     <!--
         This will be displaying the list of classes that will be implemented in 
         main-classes.component.ts
     -->
+    <div class="main-classes-image">
+      <img class="main-classes-image" src="" alt="Image" />
+    </div>
+    <div class="main-classes-class-name">{{ item.className }}</div>
+    <div class="main-classes-class-professor">{{ item.professor }}</div>
   </div>
 </div>
