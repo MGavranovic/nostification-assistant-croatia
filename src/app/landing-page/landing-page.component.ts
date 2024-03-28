@@ -10,6 +10,14 @@ export class LandingPageComponent {
   landingPageStyleHide: string = '';
   landingPageStyleShow: string = '';
 
+  currentComponent: string = 'component1';
+  showComponent: boolean = true;
+
+  toggleComponent() {
+    this.currentComponent =
+      this.currentComponent === 'component1' ? 'component2' : 'component1';
+  }
+
   onClickHideLanding(event: any): boolean {
     console.log(event);
     if (event.type === 'click') {
