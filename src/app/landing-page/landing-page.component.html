@@ -1,11 +1,10 @@
 <section class="section--landing-page">
-  <landing
-    *ngStyle="
-      onClickHideLanding('') ? landingPageStyleHide : landingPageStyleShow
-    "
-  ></landing>
+  <div *ngIf="showComponent">
+    <landing *ngIf="currentComponent === 'component1'"></landing>
+    <app-main-classes *ngIf="currentComponent === 'component2'"></app-main-classes>
+  </div>
+  <button (click)="toggleComponent()">Toggle Component</button>
   <footer (click)="onClickHideLanding($event)"></footer>
-  <app-main-classes></app-main-classes>
 </section>
 <!-- *ngClass="
       onClickHideLanding('') ? landingPageStyleHide : landingPageStyleShow
