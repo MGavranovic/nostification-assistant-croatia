@@ -1,4 +1,4 @@
-.container-landing {
+::ng-deep .container-landing {
   display: flex;
   height: 82vh;
   justify-content: center;

@@ -1,4 +1,12 @@
 <section class="section--landing-page">
-  <landing></landing>
-  <footer></footer>
+  <landing
+    *ngStyle="
+      onClickHideLanding('') ? landingPageStyleHide : landingPageStyleShow
+    "
+  ></landing>
+  <footer (click)="onClickHideLanding($event)"></footer>
+  <app-main-classes></app-main-classes>
 </section>
+<!-- *ngClass="
+      onClickHideLanding('') ? landingPageStyleHide : landingPageStyleShow
+    " -->
