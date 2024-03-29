@@ -1,11 +1,30 @@
 <div class="container-main-classes">
-  <div class="main-classes-items" *ngFor="let item of classesArray">
+  <div *ngIf="showClassItem">
+    <div class="main-classes-list-shown">
+      <div class="main-classes-items-shown">
+        <div class="main-classes-image-shown">
+          <img class="main-classes-image-shown" src="" alt="Image" />
+        </div>
+        <div class="main-classes-class-name-shown"></div>
+        <div class="main-classes-class-professor-shown"></div>
+      </div>
+    </div>
+    <div class="main-class-selected">
+      <div class="main-class-selected-name">Name</div>
+    </div>
+  </div>
+
+  <div
+    class="main-classes-items"
+    (click)="onClick(item)"
+    *ngFor="let item of classesArray"
+  >
     <!--
         This will be displaying the list of classes that will be implemented in 
         main-classes.component.ts
     -->
     <div class="main-classes-image">
-      <img class="main-classes-image" src="" alt="Image" />
+      <img class="main-classes-image" src="{{ item.img }}" alt="Image" />
     </div>
     <div class="main-classes-class-name">{{ item.className }}</div>
     <div class="main-classes-class-professor">{{ item.professor }}</div>

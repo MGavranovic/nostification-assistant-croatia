@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
   currentComponent: string = 'landingComponent';
-  showComponent: boolean = true;
 
   toggleComponent(): void {
     this.currentComponent =
