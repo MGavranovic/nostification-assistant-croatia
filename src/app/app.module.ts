@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +13,7 @@ import { MenuComponent } from './nav-bar/menu/menu.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './landing-page/footer/footer.component';
 import { LandingComponent } from './landing-page/landing/landing.component';
-import { MainClassesComponent } from './main-classes/main-classes.component';
+import { MainClassesComponent } from './landing-page/main-classes/main-classes.component';
 
 @NgModule({
   declarations: [
@@ -22,15 +25,10 @@ import { MainClassesComponent } from './main-classes/main-classes.component';
     LandingPageComponent,
     FooterComponent,
     LandingComponent,
-    MainClassesComponent
+    MainClassesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [provideClientHydration()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

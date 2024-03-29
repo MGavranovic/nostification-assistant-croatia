@@ -35,7 +35,7 @@ export class MainClassesComponent {
     {
       id: 4,
       className: 'Urologija',
-      professor: 'akademik Željko Kastelan',
+      professor: 'akademik Željko Kaštelan',
     },
   ];
 }

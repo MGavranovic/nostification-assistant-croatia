@@ -1,4 +1,9 @@
 <section class="section--landing-page">
-  <landing></landing>
-  <footer></footer>
+  <div *ngIf="showComponent">
+    <landing *ngIf="currentComponent === 'landingComponent'"></landing>
+    <app-main-classes
+      *ngIf="currentComponent === 'mainClassesComponent'"
+    ></app-main-classes>
+    <footer (click)="toggleComponent()"></footer>
+  </div>
 </section>
