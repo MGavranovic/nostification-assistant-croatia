@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
 
+interface ClassesArray {
+  id: number;
+  className: string;
+  professor: string;
+  img: string;
+}
+
 @Component({
   selector: 'app-main-classes',
   templateUrl: './main-classes.component.html',
@@ -11,21 +18,19 @@ export class MainClassesComponent {
   and method requried for that to work
   main-classes.component.html
   */
-  showClassItem: boolean = false;
 
-  onClick(item: any): void {
-    this.showClassItem = true;
-    if (this.showClassItem) {
-      console.log(item);
-    }
+  selectedItem: ClassesArray | null = null;
+
+  selectItem(classes: ClassesArray): void {
+    this.selectedItem = classes;
+    console.log(this.selectedItem);
   }
 
-  classesArray: {
-    id: number;
-    className: string;
-    professor: string;
-    img: string;
-  }[] = [
+  closeAdditionalInfo(): void {
+    this.selectedItem = null;
+  }
+
+  classes: ClassesArray[] = [
     {
       id: 0,
       className: 'Anesteziologija i reanimatologija',
