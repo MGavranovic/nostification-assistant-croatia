@@ -15,6 +15,14 @@
   </div>
   <div class="additional-info" *ngIf="selectedItem">
     <button class="close-btn" (click)="closeAdditionalInfo()">x</button>
-    <div>Selected Item: {{ selectedItem.className }}</div>
+    <h1 class="additional-info-name">
+      Selected Item: {{ selectedItem.className }}
+    </h1>
+    <div class="additional-info-description">
+      Selected Item: {{ selectedItem.description }}
+    </div>
+    <div *ngFor="let note of selectedItem.notes" class="additional-info-notes">
+      {{ note }}
+    </div>
   </div>
 </div>

@@ -70,3 +70,11 @@
 .column-layout .additional-info {
   margin-left: 20px;
 }
+
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px;
+  border-radius: 10px;
+  background-color: #efefef;
+}

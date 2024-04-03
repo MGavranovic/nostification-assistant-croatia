@@ -5,6 +5,8 @@ interface ClassesArray {
   className: string;
   professor: string;
   img: string;
+  description: string;
+  notes: string[];
 }
 
 @Component({
@@ -36,30 +38,45 @@ export class MainClassesComponent {
       className: 'Anesteziologija i reanimatologija',
       professor: 'prof. Slobodan Mihaljević',
       img: '../../assets/images/classes/anestezija.jpg',
+      description:
+        'Usmeni ispit, ispitivač: profesor Slobodan Mihaljević. 4-5 pitanja sa popisa navedenih pitanja. Skripta dovoljna.',
+      notes: ['test1', 'test2'],
     },
     {
       id: 1,
       className: 'Neurokirurgija',
       professor: 'prof. Goran Mrak',
       img: '../../assets/images/classes/brain.jpg',
+      description:
+        'Usmeni ispit, ispitivač: profesor Goran Mrak. 4-5 pitanja, sve sa popisa navedenih pitanja. Skripte dovoljne.',
+      notes: [],
     },
     {
       id: 2,
-      className: 'Organaizacija zdravstvene zastite i ekonomika',
+      className: 'Organizacija zdravstvene zaštite i ekonomika',
       professor: 'prof. Aleksandar Džakula',
       img: '../../assets/images/classes/zdravstvenaZastita.jpg',
+      description:
+        'Javiti se na mail po uputi sa Medicinskog fakulteta, profesorica će vas preusmjeriti na tajništvo, a tajništvo na kontakt profesora Džakule. Usmeni ispit, ispitivač: profesor Aleksandar Džakula. Ispit je razgovor o vašem iskustvu sa fakulteta, nekim mogućim možda razlikama koje ste uočili koje se tiču zdravstvene zaštite u državi u kojoj ste studirali i u Hrvatskoj. Ugodan i prolaz siguran. Skripta dovoljna (i previše).',
+      notes: [],
     },
     {
       id: 3,
       className: 'Otorinolaringologija (ORL)',
       professor: 'prof. Tomislav Baudoin',
       img: '../../assets/images/classes/orl.jpg',
+      description:
+        'Usmeni ispit, ispitivač: profesor Tomislav Baudoin [Boduen]. 3-4 pitanja iz spiska sa navedenih pitanja. Ugodan. Skripta dovoljna. ',
+      notes: [],
     },
     {
       id: 4,
       className: 'Urologija',
       professor: 'akademik Željko Kaštelan',
       img: '../../assets/images/classes/urology.jpg',
+      description:
+        'Usmeni ispit, ispitivač: akademik Željko Kaštelan. 3-4 pitanja od navedenih 12. Skripta dovoljna. Što nedostaje može se nadopuniti sa interneta ili bilo kojeg izvora (eurotransplant npr). Jako ugodan i prolaz siguran.',
+      notes: [],
     },
   ];
 }
