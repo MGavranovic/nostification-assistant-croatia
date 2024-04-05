@@ -16,13 +16,33 @@
   <div class="additional-info" *ngIf="selectedItem">
     <button class="close-btn" (click)="closeAdditionalInfo()">x</button>
     <h1 class="additional-info-name">
-      Selected Item: {{ selectedItem.className }}
+      {{ selectedItem.className }}
     </h1>
-    <div class="additional-info-description">
-      Selected Item: {{ selectedItem.description }}
+    <h3 class="additional-info-description">
+      {{ selectedItem.description }}
+    </h3>
+    <div
+      *ngIf="selectedItem.notes.length"
+      class="additional-info-description-header"
+    >
+      Stvari na koje treba obratiti pažnju:
     </div>
     <div *ngFor="let note of selectedItem.notes" class="additional-info-notes">
       {{ note }}
+    </div>
+    <div class="additional-info-download-header">
+      Ovdje možete preuzeti potrebne materijale >
+    </div>
+    <div
+      *ngFor="let downloadUrl of selectedItem.materialDownloadURLs"
+      class="additional-info-download"
+    >
+      <a
+        class="additional-info-download-urls"
+        [href]="downloadUrl.url"
+        target="_blank"
+        >{{ downloadUrl.label }}</a
+      >
     </div>
   </div>
 </div>

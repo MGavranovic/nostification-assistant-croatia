@@ -78,3 +78,30 @@
   border-radius: 10px;
   background-color: #efefef;
 }
+
+.additional-info-name {
+  padding-bottom: 20px;
+}
+
+.additional-info-description {
+  padding-bottom: 15px;
+}
+
+.additional-info-description-header {
+  padding-bottom: 5px;
+}
+
+.additional-info-notes {
+  padding-top: 2px;
+}
+
+.additional-info-download-header {
+  padding-top: 20px;
+  justify-content: center;
+  color: #1f1a1a;
+}
+
+.additional-info-download-urls {
+  padding-top: 2px;
+  color: orangered;
+}
