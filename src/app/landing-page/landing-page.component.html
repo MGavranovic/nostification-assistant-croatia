@@ -3,5 +3,8 @@
   <app-main-classes
     *ngIf="currentComponent === 'mainClassesComponent'"
   ></app-main-classes>
-  <footer (click)="toggleComponent()"></footer>
+  <footer
+    (click)="toggleComponent()"
+    [currentComponentFooterText]="currentComponentFooterText"
+  ></footer>
 </section>
