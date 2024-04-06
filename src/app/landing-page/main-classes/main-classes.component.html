@@ -20,9 +20,14 @@
     <h1 class="additional-info-name">
       {{ selectedItem.className }}
     </h1>
-    <h3 class="additional-info-description">
-      {{ selectedItem.description }}
-    </h3>
+    <div
+      class="additional-info-description"
+      *ngFor="let details of selectedItem.description"
+    >
+      <h3>Tip ispita: {{ details.exam }}</h3>
+      <h3>Ispitivač{{ details.professor }}</h3>
+      <h3>Iskustva: {{ details.tips }}</h3>
+    </div>
     <div
       *ngIf="selectedItem.notes.length"
       class="additional-info-description-header"
