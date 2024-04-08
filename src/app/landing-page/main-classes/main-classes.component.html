@@ -14,9 +14,7 @@
     </div>
   </div>
   <div class="additional-info" *ngIf="selectedItem">
-    <button class="close-btn" (click)="closeAdditionalInfo()">
-      <i class="fa-solid fa-x"></i>
-    </button>
+    <span class="close-btn" (click)="closeAdditionalInfo()"> &times; </span>
     <h1 class="additional-info-name">
       {{ selectedItem.className }}
     </h1>
