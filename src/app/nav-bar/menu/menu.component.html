@@ -11,5 +11,46 @@
     (click)="switchToComponent('mainClassesComponent')"
     >Predmeti</a
   >
-  <a class="nav-bar-menu-item" href="#">Kontatiraj nas</a>
+  <a class="nav-bar-menu-item" href="#" (click)="showContactInfoOnClick()"
+    >Kontatiraj nas
+    <div class="contact-info-modal" *ngIf="contactModalVisible">
+      <div class="contact-info-modal-content">
+        <span
+          class="contact-info-modal-close"
+          (click)="closeContactInfo($event)"
+          >&times;</span
+        >
+        <p class="contact-info-modal-name item">
+          Ime autora projekta: Miloš Gavranović
+        </p>
+        <p class="contact-info-modal-email item">
+          Email adresa: mgavranovic7&#64;gmail.com
+        </p>
+        <p class="contact-info-modal-info">
+          U slučaju da želite dodati predmet ili iskustvo na koje ste naišli
+          tokom procesa nostrifikacije, slobodno me kontaktirajte kroz jedan od
+          medijuma navedenih dole
+        </p>
+        <a
+          class="contact-info-modal-github item"
+          href="https://github.com/MGavranovic"
+          target="_blank"
+        >
+          <img
+            class="contact-info-modal-github-img"
+            src="../../../assets/images/socials/github-mark.svg"
+            alt="github"
+        /></a>
+        <a
+          class="contact-info-modal-github item"
+          href="http://www.linkedin.com/in/milo%C5%A1-gavranovi%C4%87"
+          target="_blank"
+          ><img
+            class="contact-info-modal-git"
+            src="../../../assets/images/socials/iconmonstr-linkedin-3.svg"
+            alt="linkedin"
+        /></a>
+      </div>
+    </div>
+  </a>
 </div>

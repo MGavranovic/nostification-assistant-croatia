@@ -12,4 +12,17 @@ export class MenuComponent {
   switchToComponent(componentName: string) {
     this.toggleService.toggleContent(componentName);
   }
+
+  contactModalVisible: boolean = false;
+  showContactInfoOnClick(): void {
+    this.contactModalVisible = true;
+    // console.log(this.contactModalVisible);
+  }
+
+  closeContactInfo(event: any): void {
+    console.log(event);
+    this.contactModalVisible = false;
+    event.stopPropagation();
+    console.log(this.contactModalVisible);
+  }
 }
