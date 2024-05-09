@@ -91,8 +91,8 @@ export class MainClassesComponent {
       description: [
         {
           exam: 'Usmeni ispit',
-          professor: 'profesor Goran Mrak. 4-5 pitanja,',
-          tips: 'Sve sa popisa navedenih pitanja. Skripte dovoljne.',
+          professor: 'prof. dr. sc. Goran Mrak,',
+          tips: '4-5 pitanja, sve sa popisa navedenih pitanja. Skripte dovoljne.',
         },
       ],
       notes: [
@@ -188,12 +188,12 @@ export class MainClassesComponent {
     {
       id: 4,
       className: 'Urologija',
-      professor: 'akademik Željko Kaštelan',
+      professor: 'akademik Željko Kaštelan, dr. med.',
       img: '../../assets/images/classes/urology.jpg',
       description: [
         {
           exam: 'Usmeni ispit.',
-          professor: 'akademik Željko Kaštelan.',
+          professor: 'akademik Željko Kaštelan, dr. med.',
           tips: ' 3-4 pitanja od navedenih 12. Skripta dovoljna. Što nedostaje može se nadopuniti sa interneta ili bilo kojeg izvora (eurotransplant npr). Jako ugodan i prolaz siguran.',
         },
       ],
